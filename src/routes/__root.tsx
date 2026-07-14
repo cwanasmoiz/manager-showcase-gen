@@ -77,18 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Alex Chen — Product Manager building AI-native products" },
+      { title: "Anas Moiz Hashmi — Staff Product Manager, Cloudways @ DigitalOcean" },
       {
         name: "description",
         content:
-          "Portfolio of Alex Chen, Senior Product Manager with 10+ years shipping AI, SaaS, and platform products at scale.",
+          "Portfolio of Anas Moiz Hashmi — Staff Product Manager at Cloudways (DigitalOcean). Engineer-turned-PM with 10+ years shipping cloud, hosting, and developer platforms.",
       },
-      { name: "author", content: "Alex Chen" },
-      { property: "og:title", content: "Alex Chen — Product Manager" },
+      { name: "author", content: "Anas Moiz Hashmi" },
+      { property: "og:title", content: "Anas Moiz Hashmi — Staff Product Manager" },
       {
         property: "og:description",
         content:
-          "Senior Product Manager building AI-native products across SaaS, platform, and developer tools.",
+          "Engineer-turned-PM shipping cloud hosting and developer platforms at Cloudways (DigitalOcean).",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

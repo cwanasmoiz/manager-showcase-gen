@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Linkedin, Twitter, ArrowUpRight, Mail, Sparkles, LayoutGrid, LineChart, Compass } from "lucide-react";
+import { Linkedin, Twitter, ArrowUpRight, Mail, Cloud, LayoutGrid, LineChart, Compass } from "lucide-react";
 import headshot from "@/assets/headshot.jpg";
 
 export const Route = createFileRoute("/")({
@@ -7,71 +7,71 @@ export const Route = createFileRoute("/")({
 });
 
 const stats = [
-  { value: "3M+", label: "Users reached", sub: "Across shipped products" },
-  { value: "62%", label: "Activation lift", sub: "Onboarding redesign, 2024" },
-  { value: "10+", label: "Years in product", sub: "SaaS, AI, dev tools" },
-  { value: "9", label: "Products led", sub: "0→1 and scale" },
+  { value: "10+", label: "Years in tech", sub: "Engineer to Staff PM" },
+  { value: "$350M", label: "Acquisition", sub: "Cloudways → DigitalOcean" },
+  { value: "80K+", label: "Customers served", sub: "Managed cloud hosting" },
+  { value: "5", label: "Cloud providers", sub: "AWS, GCP, DO, Linode, Vultr" },
 ];
 
 const brands = [
-  "Linear", "Notion", "Stripe", "Vercel", "Figma", "Intercom", "Zapier", "Datadog",
+  "DigitalOcean", "Cloudways", "AWS", "Google Cloud", "Linode", "Vultr", "WordPress", "Magento",
 ];
 
 const skills = [
   {
-    icon: Sparkles,
-    title: "AI Product Strategy",
-    body: "Turning frontier models into everyday product surfaces — agents, copilots, and RAG systems that ship, measure, and improve.",
+    icon: Cloud,
+    title: "Cloud & Hosting Platforms",
+    body: "Managed cloud infrastructure at scale — server orchestration, multi-cloud provisioning, and the operator experience that keeps agencies and SMBs shipping.",
   },
   {
     icon: LayoutGrid,
-    title: "0→1 & Platform",
-    body: "Taking fuzzy problems to launched products. From discovery and prototyping through pricing, packaging, and GTM.",
+    title: "0→1 Product Building",
+    body: "From discovery to GA. Framing fuzzy problems, prototyping with engineering, and shipping platform features that customers actually adopt.",
   },
   {
     icon: LineChart,
-    title: "Growth & Activation",
-    body: "Instrumenting the funnel, running the experiments, and shipping the mechanics that move retention and revenue.",
+    title: "Data-Driven Decisions",
+    body: "Structured, analytical approach rooted in systems thinking. Instrumenting funnels, running experiments, and letting the data pick the roadmap.",
   },
   {
     icon: Compass,
-    title: "Product Leadership",
-    body: "Building small, senior teams. Coaching PMs, aligning cross-functional partners, writing the strategy people can act on.",
+    title: "Cross-Functional Leadership",
+    body: "Partnering across engineering, design, marketing, and support to align technical and business teams around user-centric, high-impact outcomes.",
   },
 ];
 
 const experience = [
   {
-    company: "Northwind AI",
-    role: "Principal Product Manager",
-    period: "2024 — present",
-    body: "Leading the agent platform used by 40+ enterprise teams. Shipped the workflow builder, model routing, and evals suite; drove ARR from $4M to $12M in year one.",
+    company: "DigitalOcean · Cloudways",
+    role: "Staff Product Manager",
+    period: "2022 — present",
+    body: "Leading product for Cloudways after the $350M acquisition by DigitalOcean. Shipped Cloudways Site Manager to GA for agencies, and driving the platform roadmap for managed cloud hosting.",
   },
   {
-    company: "Loop",
-    role: "Group Product Manager",
-    period: "2021 — 2024",
-    body: "Ran the collaboration surface at a Series C SaaS company. Rebuilt onboarding for a 62% activation lift and launched the Loop API, now powering 200+ integrations.",
-  },
-  {
-    company: "Meridian",
+    company: "Cloudways",
     role: "Senior Product Manager",
-    period: "2018 — 2021",
-    body: "Owned the payments and billing platform. Migrated 1.4M merchants to a new pricing engine with zero downtime and shipped self-serve upgrades that lifted MRR 28%.",
+    period: "2020 — 2022",
+    body: "Owned core platform surfaces across server management, application deployment, and the customer console. Contributed to the growth and platform maturity that led to the DigitalOcean acquisition.",
   },
   {
-    company: "Fieldnote",
-    role: "Founding PM",
+    company: "Cloudways",
+    role: "Product Manager",
+    period: "2018 — 2020",
+    body: "Transitioned from engineering into product. Shipped features across multi-cloud provisioning (AWS, GCP, DO, Linode, Vultr) and the WordPress / Magento hosting stack.",
+  },
+  {
+    company: "Cloudways · Gaditek",
+    role: "Software / Systems Engineer",
     period: "2015 — 2018",
-    body: "Employee #4 at a mobile-first SaaS for field teams. Built the roadmap through Series A, hired the first three PMs, and grew paid seats past 50,000.",
+    body: "Started in engineering with a focus on systems thinking and analytical problem-solving. Built the foundation for a decade of technical, data-driven product work.",
   },
 ];
 
 const writing = [
-  { title: "Designing evals your team will actually run", date: "Jun 2026" },
-  { title: "The unreasonable effectiveness of a boring roadmap", date: "Mar 2026" },
-  { title: "Pricing AI products when the cost floor keeps moving", date: "Dec 2025" },
-  { title: "Notes on hiring senior PMs into small teams", date: "Aug 2025" },
+  { title: "Cloudways Site Manager is now Generally Available for agencies", date: "Jun 2026" },
+  { title: "Caching mechanisms that actually speed up your site", date: "Jan 2023" },
+  { title: "How to install WordPress into a subdirectory on Cloudways", date: "Sep 2020" },
+  { title: "How to save your online business during the COVID-19 outbreak", date: "Jul 2020" },
 ];
 
 function Index() {
@@ -98,7 +98,7 @@ function Header() {
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-foreground text-sm font-bold text-background">
             A
           </span>
-          <span className="text-sm font-semibold tracking-tight">Alex Chen</span>
+          <span className="text-sm font-semibold tracking-tight">Anas Moiz Hashmi</span>
         </a>
         <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#about" className="hover:text-foreground transition-colors">About</a>
@@ -107,7 +107,7 @@ function Header() {
           <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
         </nav>
         <div className="flex items-center gap-3 text-muted-foreground">
-          <a href="#" aria-label="LinkedIn" className="hover:text-foreground transition-colors">
+          <a href="https://www.linkedin.com/in/anasmoiz/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="hover:text-foreground transition-colors">
             <Linkedin className="h-4 w-4" />
           </a>
           <a href="#" aria-label="Twitter" className="hover:text-foreground transition-colors">
@@ -127,16 +127,16 @@ function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
             <span className="h-1.5 w-1.5 rounded-full bg-highlight" />
-            Product leader with 10+ years across SaaS, AI, and platform
+            Staff Product Manager · Cloudways @ DigitalOcean · Karachi, PK
           </div>
           <h1 className="mt-6 text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-            Building the next wave of{" "}
-            <span className="text-highlight">AI-native</span> software.
+            Engineer-turned-PM shipping{" "}
+            <span className="text-highlight">managed cloud</span> at scale.
           </h1>
           <p className="mt-6 max-w-lg text-lg text-muted-foreground">
-            I ship agents, platforms, and developer tools that turn model
-            capability into product value. Principal Product Manager at
-            Northwind AI.
+            I use a structured, data-driven approach to product management —
+            turning systems-level thinking into user-centric, high-impact
+            products for developers, agencies, and SMBs.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
@@ -158,7 +158,7 @@ function Hero() {
           <div className="relative aspect-square w-64 overflow-hidden rounded-full border border-border bg-secondary sm:w-80 lg:w-[380px]">
             <img
               src={headshot}
-              alt="Alex Chen headshot"
+              alt="Anas Moiz Hashmi headshot"
               width={800}
               height={800}
               className="h-full w-full object-cover"
@@ -192,7 +192,7 @@ function Brands() {
     <section className="border-b border-border/60 bg-secondary/40">
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-          Shipped alongside teams at
+          Built on and alongside
         </div>
         <div className="mt-6 overflow-hidden">
           <div className="marquee flex w-max gap-16 whitespace-nowrap">
@@ -215,8 +215,9 @@ function Skills() {
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">What I do</h2>
           <p className="mt-3 text-muted-foreground">
-            A decade of pattern recognition across AI, SaaS, and platform
-            products — put to work on your hardest problem.
+            A decade at the intersection of engineering and product — put to
+            work on managed cloud, hosting platforms, and the operator
+            experience.
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
@@ -240,12 +241,13 @@ function Experience() {
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Experience</h2>
           <p className="mt-3 text-muted-foreground">
-            From founding-team PM to principal at an AI platform.
+            10 years and 8 months across engineering and product at Cloudways
+            and DigitalOcean.
           </p>
         </div>
         <div className="mt-12 divide-y divide-border rounded-2xl border border-border bg-background">
           {experience.map((e) => (
-            <div key={e.company} className="grid grid-cols-1 gap-4 p-8 md:grid-cols-[200px_1fr]">
+            <div key={e.role + e.period} className="grid grid-cols-1 gap-4 p-8 md:grid-cols-[200px_1fr]">
               <div>
                 <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                   {e.period}
@@ -270,10 +272,10 @@ function Writing() {
       <div className="mx-auto max-w-6xl px-6 py-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Latest writing</h2>
-            <p className="mt-3 text-muted-foreground">Notes on product, AI, and building teams.</p>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Writing & posts</h2>
+            <p className="mt-3 text-muted-foreground">Notes on cloud, hosting, and shipping product.</p>
           </div>
-          <a href="#" className="inline-flex items-center gap-1 text-sm font-medium text-foreground hover:text-highlight">
+          <a href="https://thecloudkeeper.io/author/anasmoiz/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm font-medium text-foreground hover:text-highlight">
             View all <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>
@@ -281,7 +283,9 @@ function Writing() {
           {writing.map((w) => (
             <li key={w.title}>
               <a
-                href="#"
+                href="https://thecloudkeeper.io/author/anasmoiz/"
+                target="_blank"
+                rel="noreferrer"
                 className="group flex items-center justify-between gap-6 py-5 transition-colors hover:text-highlight"
               >
                 <span className="text-lg font-medium">{w.title}</span>
@@ -304,18 +308,20 @@ function Contact() {
       <div className="absolute inset-0 dot-grid opacity-60" aria-hidden />
       <div className="relative mx-auto max-w-3xl px-6 py-24 text-center">
         <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-          Got a hard product problem?
+          Let's talk product & cloud.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-          Advising, fractional work, or just a good conversation about AI and
-          product. I read every message.
+          Advising, collaboration, or a good conversation about managed cloud,
+          hosting platforms, and product craft — always open to a message.
         </p>
         <a
-          href="mailto:hello@alexchen.co"
+          href="https://www.linkedin.com/in/anasmoiz/"
+          target="_blank"
+          rel="noreferrer"
           className="mt-8 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90"
         >
           <Mail className="h-4 w-4" />
-          hello@alexchen.co
+          Reach out on LinkedIn
         </a>
       </div>
     </section>
@@ -325,11 +331,11 @@ function Contact() {
 function Footer() {
   return (
     <footer className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-8 text-sm text-muted-foreground">
-      <div>© {new Date().getFullYear()} Alex Chen. Built with care.</div>
+      <div>© {new Date().getFullYear()} Anas Moiz Hashmi. Built with care.</div>
       <div className="flex items-center gap-4">
-        <a href="#" className="hover:text-foreground">LinkedIn</a>
-        <a href="#" className="hover:text-foreground">Twitter</a>
-        <a href="#contact" className="hover:text-foreground">Email</a>
+        <a href="https://www.linkedin.com/in/anasmoiz/" target="_blank" rel="noreferrer" className="hover:text-foreground">LinkedIn</a>
+        <a href="https://thecloudkeeper.io/author/anasmoiz/" target="_blank" rel="noreferrer" className="hover:text-foreground">Blog</a>
+        <a href="#contact" className="hover:text-foreground">Contact</a>
       </div>
     </footer>
   );
