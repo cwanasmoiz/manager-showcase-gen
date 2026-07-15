@@ -13,9 +13,6 @@ export default defineConfig({
     
   },
   vite: {
-    server: {
-      allowedHosts: [".cloudwaysapps.com"],
-    },
     preview: {
       allowedHosts: [".cloudwaysapps.com"],
     },
