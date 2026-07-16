@@ -11,6 +11,7 @@ export default defineConfig({
     preview: {
       // Allow Cloudways preview host
       allowedHosts: ["nodejs-1649751-6554242.cloudwaysapps.com"],
+      allowedHosts: ["squid-app-t7g7f.ondigitalocean.app"],
     },
   },
   tanstackStart: {
