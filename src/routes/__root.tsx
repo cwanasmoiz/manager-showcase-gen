@@ -84,14 +84,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Portfolio of Anas Moiz Hashmi — Staff Product Manager at Cloudways (DigitalOcean). Engineer-turned-PM with 10+ years shipping cloud, hosting, and developer platforms.",
       },
       { name: "author", content: "Anas Moiz Hashmi" },
-      { property: "og:title", content: "Anas Moiz Hashmi — Staff Product Manager" },
+      { property: "og:title", content: "Anas Moiz Hashmi — Staff Product Manager, Cloudways @ DigitalOcean" },
       {
         property: "og:description",
         content:
-          "Engineer-turned-PM shipping cloud hosting and developer platforms at Cloudways (DigitalOcean).",
+          "Portfolio of Anas Moiz Hashmi — Staff Product Manager at Cloudways (DigitalOcean). Engineer-turned-PM with 10+ years shipping cloud, hosting, and developer platforms.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Anas Moiz Hashmi — Staff Product Manager, Cloudways @ DigitalOcean" },
+      { name: "twitter:description", content: "Portfolio of Anas Moiz Hashmi — Staff Product Manager at Cloudways (DigitalOcean). Engineer-turned-PM with 10+ years shipping cloud, hosting, and developer platforms." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f861fb8a-b28a-4ee8-a0bd-0d1e90e2d9e2/id-preview-0325de2a--e0f7b44a-3f19-40c7-ade4-a2daf61b49ac.lovable.app-1784185496455.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f861fb8a-b28a-4ee8-a0bd-0d1e90e2d9e2/id-preview-0325de2a--e0f7b44a-3f19-40c7-ade4-a2daf61b49ac.lovable.app-1784185496455.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
