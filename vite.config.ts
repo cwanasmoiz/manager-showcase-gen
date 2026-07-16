@@ -18,4 +18,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  nitro: {
+    // Self-hosted Node deployment (e.g. Cloudways). Default target is Cloudflare Workers,
+    // which does not emit dist/server/server.js that `vite preview` expects.
+    preset: "node-server",
+  },
 });
