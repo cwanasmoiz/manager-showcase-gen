@@ -10,8 +10,8 @@ export default defineConfig({
   vite: {
     preview: {
       // Allow Cloudways preview host
-      allowedHosts: ["nodejs-1649751-6554242.cloudwaysapps.com"],
-      allowedHosts: ["squid-app-t7g7f.ondigitalocean.app"],
+      allowedHosts: [".cloudwaysapps.com"],
+      allowedHosts: [".ondigitalocean.app"],
     },
   },
   tanstackStart: {
