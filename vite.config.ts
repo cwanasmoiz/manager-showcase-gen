@@ -10,7 +10,7 @@ export default defineConfig({
   vite: {
     preview: {
       // Allow Cloudways preview host
-      allowedHosts: [".cloudwaysapps.com"],
+      allowedHosts: [".cloudwaysnodeapps.com"],
       allowedHosts: [".ondigitalocean.app"],
     },
   },
